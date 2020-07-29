@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>icrowd</title>
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Recursive:wght@500&display=swap" rel="stylesheet">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+    <!-- для анимации -->
+    <link rel="stylesheet" href="/css/fm.revealator.jquery.min.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/fm.revealator.jquery.min.js"></script>
+    <!-- ==================== -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/wow.min.js"></script>
+
+</head>
+<body>
+    <span id="top"></span>
+<!-- ===============header============== -->
+    <section class="header" id="header">
+        <div class="container">
+            <div class="row align-items-center" style= "height:80px">
+                <div class= "logo_top col-lg-3 col-md-3">
+                    <img src="logo/logo.png" alt="logo" class="logo_img"> 
+                </div>
+
+                <div class="hor_menu col-lg-9 col-md-9">
+                    <nav id="menu">
+                      <span id="nav_button">&equiv;</span>
+                      <ul>
+                        <li><a href="#header">HOME</a></li>
+                        <li><a href="#work">HOW IT WORKS</a></li>
+                        <li><a href="#discover">DISCOVER A PROJECT</a></li>
+                        <li><a href="#feat">FEATURED PROJECT </a></li>
+                        <li><a href="#part">COMMUNITY</a></li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+
+                        <li><input class="btn_login" type="button" onclick="document.getElementById('id01').style.display='block'" value= "Login"/></li>
+                      </ul>
+                    </nav>
+                </div>
+
+                <!-- <div class="btn col-lg-2 col-md-2">
+                    <input class="btn_login" type="button" onclick="document.getElementById('id01').style.display='block'" value= "Login"/>
+                </div>                -->
+            </div> 
+        </div>
+
+        <div class="clearfix"> </div>
+
+    </section>
+<!-- ======================login======================= -->
+
+<div id="id01" class="modal">
+  
+    <form class="modal-content animate" action="/action_page.php">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+        <img src="icons/avatar.svg" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#d1dad1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+<!-- ========================register======================= -->
+<div id="id02" class="modal">
+  
+    <form class="modal-content animate" action="/action_page.php">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+        <img src="icons/avatar.svg" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <label for="email"><b>E-mail</b></label>
+        <input type="email" placeholder="Enter e-mail" name="email" required>
+  
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
+      </div>
+    </form>
+  </div>
+ 
+<!-- =============== first screen ===================== -->
+    <section  class="first_screen" >
+        <div class="container">
+            <div class="row">
+                <div class="first_title col-lg-12 col-md-12">Intellectual Property has the Shelf Life</div>
+                <div class="first_subtitle col-lg-12 col-md-12"id="first">of a Banana.</div>
+                <!-- <input class="first_btn" type="button" onclick="window.location.href = '#';" value= "Become a Member" /></div> -->
+                <input class="first_btn revealator-fade revealator-duration10 revealator-once" type="button" onclick="document.getElementById('id02').style.display='block'" value= "Become a Member"/>
+                </div> 
+            </div>
+        </div>
+    </section>
+ <!-- =============== presentation ===================== -->   
+ <section class="presentation">
+    <div class="container">
+        <div class="row">
+            <div class= "present_icon col-lg-12 col-md-12"> 
+                <img src="icons/ball.png" alt="icon" class="icon_img revealator-zoomout revealator-once revealator-delay4 revealator-once revealator-below"> 
+            </div>
+            </div>
+            <div class="row">
+            <div class="present_title col-lg-12 col-md-12" id= "work">Our work is the presentation<br> 
+                of our capabilities.
+            </div>
+            </div>
+            <div class="row">
+            <div class="present_subtitle col-lg-12 col-md-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <br>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br><br>
+
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in vo-<br>luptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </div>
+        </div>
+    </div>
+ </section>
+ <!-- =============== trio ===================== -->  
+    <section class="trio" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1 col-md-1"> 
+                    <input class="trio_btn" type="button" value= "1"/>
+                </div>
+                <div class="trio_text col-lg-3 col-md-3">
+                    Simple
+                </div>
+                <div class="col-lg-1 col-md-1"> 
+                    <input class="trio_btn" type="button" value= "2"/>
+                </div>
+                <div class="trio_text col-lg-3 col-md-3">
+                    Transparent
+                </div>
+                <div class="col-lg-1 col-md-1"> 
+                    <input class="trio_btn" type="button" value= "3"/>
+                </div>
+                <div class="trio_text col-lg-3 col-md-3">
+                    Collaborative
+                </div>
+            </div>
+        </div>
+<!-- =============== glass ===================== -->  
+    </section>    
+    <section class="glass">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2"></div>
+                <div class="col-lg-2 col-md-2">
+                    <img src="icons/glass.png" alt="logo" class="glass_img">
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                    <div class="glass_title">
+                        Browse projects, like booking a hotel online !
+                    </div>
+                    <div class="glass_subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </section>
+<!-- =============== find ===================== -->  
+   <section class="find" id= "discover">
+       <div class="container">
+            <div class="row">
+                <div class="find_chair col-lg-3 col-md-3">
+                    <img src="img/chair.png" alt="logo" class="find_img">
+                </div>
+                <div class="find_properties col-lg-3 col-md-3 revealator-slideright revealator-delay2 revealator-once revealator-below">
+                    <div class="find_title">
+                        Find Properties
+                    </div>
+                    <div class="find_subtitle">
+                        Sign up to browse the portfolio.
+                        Your journey to becoming a real estate baron starts here.
+                    </div>
+                    <!-- <input class="find_btn" type="button" onclick="window.location.href = '#';" value= "Become A Member"/>
+                </div> -->
+                <input class="find_btn" type="button" onclick="document.getElementById('id02').style.display='block'" value= "Become a Member"/>
+                </div> 
+                
+                <div class="find_bag col-lg-3 col-md-3 revealator-slideleft revealator-delay2 revealator-once revealator-below">
+                    <img src="img/bag.png" alt="logo" class="find_img">
+                </div>
+                <div class="find_bauer col-lg-3 col-md-3">
+                    <div class="bauer_title">
+                        Find Buyers
+                    </div>
+                    <div class="bauer_subtitle">
+                        Sign up to browse the portfolio.
+                        Your journey to becoming a real estate baron starts here.
+                    </div>
+                    <input class="bauer_btn" type="button" onclick="window.location.href = '#iw-modal';" value= "Submit Your Project"/>
+                </div>
+                <!-- <input class="bauer_btn" type="button" onclick="document.getElementById('id03').style.display='block'" value= "Become a Member"/>
+            </div>  -->
+            </div>
+       </div>
+    </section>
+<!-- ===================modal collout================= -->
+<div id="iw-modal" class="iw-modal">
+    <div class="iw-modal-wrapper">
+    <div class="iw-CSS-modal-inner">
+       <div class="iw-modal-header">
+            <h3 class="iw-modal-title">Our e-mail: our_login@domen.com</h3>
+            <a href="#close" title="Close" class="iw-close">×</a>
+       </div>
+       <div class="iw-modal-text">    
+         <p>1. Want to put your business on autopilot?<br>
+            2. do you Want to launch an ad and wait for offers?<br>
+            3. do you Want to increase your income?<br><br>
+            
+            Send information about your project to our email!</p>
+       </div>
+      </div>
+    </div>	
+</div>
+<!-- ==================================feature================================ -->
+    <section class="feature" id= "feat">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1 col-md-1"></div>
+                <div class="feat_project col-lg-8 col-md-8">
+                    <div class="feat_title">
+                        Featured Projects
+                    </div>
+                    <div class="feat_subtitle">
+                        Brief details of new and popular projects. To view full listings, you will be required to<br>
+                        sign up and become a member.
+                    </div>
+                </div>
+                <!-- <div class="col-lg-1 col-md-1"></div> -->
+                <div class="feat_project col-lg-2 col-md-2">
+                    <!-- <input class="feat_btn" type="button" onclick="window.location.href = '#';" value= "Become a Member"/>
+                </div> -->
+                <input class="feat_btn" type="button" onclick="document.getElementById('id02').style.display='block'" value= "Become a Member"/>
+                </div> 
+            </div>
+        </div>
+    </section>
+<!-- ===================================photos================================= -->
+<!-- <div class="revealator-slidedown revealator-once revealator-once revealator-below"></div> -->
+    <section class="photos">
+        <div class="container">
+            <div class="row">
+                <div class="photos_img1 col-lg-4 col-md-4 revealator-slideright revealator-once revealator-delay2 revealator-once revealator-below">
+                    <div id="rectangle">
+                    <img src="img/photo11.jpg" alt="photo" class="photo1_img">
+                    <div class="photos_title">Ontario Tower , LONDON</div>
+                    <div class="photos_subtitle"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" style="width:10%"></div>
+                    </div>
+                    <div class="photos_textr">10% Funded</div>
+                    <div class="photos_textl">8 Days Left</div>
+                    <div class="divider"></div>
+                    <div class="photos_textsee">See Project Detail</div>
+                    <img src="img/button.png" alt="btn" class="photo2_img">
+                    </div>
+                </div> 
+                <div class="photos_img2 col-lg-4 col-md-4 revealator-zoomin revealator-once revealator-delay4 revealator-once revealator-below">
+                    <div id="rectangle">
+                    <img src="img/photo12.jpg" alt="photo" class="photo1_img">
+                    <div class="photos_title">Ontario Tower , LONDON</div>
+                    <div class="photos_subtitle"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" style="width:60%"></div>
+                    </div>
+                    <div class="photos_textr">60% Funded</div>
+                    <div class="photos_textl">8 Days Left</div>
+                    <div class="divider"></div>
+                    <div class="photos_textsee">See Project Detail</div>
+                    <img src="img/button.png" alt="btn" class="photo2_img">
+                    </div>
+
+                </div>
+                
+                <div class="photos_img3 col-lg-4 col-md-4 revealator-slideleft revealator-once revealator-delay6 revealator-once revealator-below"> 
+                    <div id="rectangle">
+                    <img src="img/photo13.jpg" alt="photo" class="photo1_img">
+                    <div class="photos_title">Ontario Tower , LONDON</div>
+                    <div class="photos_subtitle"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" style="width:10%"></div>
+                    </div>
+                    <div class="photos_textr">10% Funded</div>
+                    <div class="photos_textl">8 Days Left</div>
+                    <div class="divider"></div>
+                    <div class="photos_textsee">See Project Detail</div>
+                    <img src="img/button.png" alt="btn" class="photo2_img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ================================================================== -->
+<section class="part" id="part">
+    <div class="container">
+        <div class="row">
+            <div class="part_title">Be Part of a Growing International Community</div>
+            <div class="part_subtitle">One of the challenges in networking is everybody thinks it's making cold calls to strangers. Actually, it's <br>the people who already have strong trust relationships with you</div>
+        </div>
+        <div class="row">
+             <div class="part_right col-lg-6 col-md-6 revealator-zoomin revealator-delay1 revealator-once revealator-below">
+                <div class="callout1">
+                    <div class="row_title1">One of the Best</div>
+                    <div class="row_subtitle1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod taempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+               <img src="img/david1.png" alt="btn" class="david1">
+                <div class="row_text1">David Beckham</div>
+
+            </div>
+            <div class="part_right col-lg-6 col-md-6 revealator-zoomin revealator-delay1 revealator-once revealator-below">
+                <div class="callout2">
+                    <div class="row_title2">One of the Best</div>
+                    <div class="row_subtitle2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod taempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+                <img src="img/david2.png" alt="btn" class="david2">
+                <div class="row_text2">David Beckham</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer_icon col-lg-12 col-md-12">
+                <img src="icons/yahoo.png" alt="icon" class="icon1 revealator-fade revealator-delay2 revealator-duration10 revealator-once revealator-below">
+                <img src="icons/tech.png" alt="icon" class="icon2 revealator-fade revealator-delay4 revealator-duration10 revealator-once revealator-below">
+                <img src="icons/crowd.png" alt="icon" class="icon3 revealator-fade revealator-delay6 revealator-duration10 revealator-once revealator-below">
+                <img src="icons/week.png" alt="icon" class="icon4 revealator-fade revealator-delay8 revealator-duration10 revealator-once revealator-below">
+                <img src="icons/hk.png" alt="icon" class="icon5 revealator-fade revealator-delay10 revealator-duration10 revealator-once revealator-below">
+                <img src="icons/money.png" alt="icon" class="icon6 revealator-fade revealator-delay12 revealator-duration10 revealator-once revealator-below">
+                <img src="icons/rthk.png" alt="icon" class="icon7 revealator-fade revealator-delay14 revealator-duration10 revealator-once revealator-below">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="copyright">
+    <div class="footer_divider"></div>
+    <div class="copyright_a"><a>All right reserved Bikbulatov Valery 2020 r.p.Ordynskoe&copy;</a></div>
+</section>
+
+
+<!-- плавная прогрутка -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+            $("a[href^='#']").click(function(){
+                    var _href = $(this).attr("href");
+                    $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+                    return false;
+            });
+    });
+    </script>
+
+<!-- Для кнопки К НАЧАЛУ -->
+    <div id="scroll-bottom"></div>
+    <p id="back-top">
+    <a href="#top"><span></span></a>
+    </p>
+
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/button_up.js"></script>
+
+<!-- ===========login========== -->
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+
+</body> 
+
+</html>

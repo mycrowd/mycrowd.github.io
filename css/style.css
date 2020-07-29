@@ -1,0 +1,812 @@
+* {
+	/* margin: 0;
+  padding: 0; */
+  font-family: 'Open Sans' sans-serif;
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic');
+body {
+  width: 1300px;
+}
+.logo_img {
+  margin: 10px auto;
+  /* border: 1px solid #fff; */
+}
+
+header {
+	background-color: #C0C0C0;
+}
+#menu {
+  display: table;
+  position: relative;
+  width: 100%;
+}
+#menu ul {
+	display: table-row;
+	background-color: #FFFFFF;
+	list-style: none;
+}
+#menu ul li {
+	display: table-cell;
+}
+#menu ul li a {
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	/* font-size: 0,6em; */
+	text-align: center;
+	text-decoration: none;
+	opacity: 0.67;
+	font-family: 'Open Sans' sans-serif;
+	font-size: 13.2px;
+	line-height: 77px;
+	font-weight: 600;
+	color: #666666;
+}
+#menu ul li a:hover {
+	/* background-color: #990000; */
+	color: #add136;
+}
+#nav_button {
+	display: none;
+	width: 50px;
+	height: 50px;
+	font-size: 2.5em;
+	text-align: center;
+	background-color: #FFFFFF;
+	border: 1px solid #949494;
+	cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+	#menu {
+		display: inline-block;
+		position: relative;
+		width: auto;
+	}
+	#menu ul {
+		display: none;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 20;
+	}
+	#menu ul li {
+		display: list-item;
+		border-top: none;
+	}
+	#nav_button {  
+		display: inline-block;
+	}
+	#menu:hover, #menu.open_nav {
+		width: 100%;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-webkit-touch-callout: none;
+	}
+	#menu:hover ul, #menu.open_nav ul {
+		display: block;
+    margin-top: 50px;
+	}
+}
+
+.btn_login {
+  margin-top: 20px;
+  width: 100px;
+  height: 37px;
+  opacity: 0.81;
+  background-color: #add136;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  border-radius: 18px;
+  outline: none;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.btn_login:hover {
+  background-color: #809c23;
+} 
+/* ================================first_screen=================================== */
+.first_screen {
+  display: block;
+  min-height: 500px;
+  background: url("../img/banner.jpg") center center/cover no-repeat;
+  margin: 10px auto;
+
+  opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+  transition: 1s; /*Скорость перехода состояния элемента*/
+  animation: show 3s 1; /* Указываем название анимации, её время и количество повторов*/
+  animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+  animation-delay: 1s; /* Задержка перед началом */
+
+}
+/* появление на экране */
+@keyframes show{
+  0%{
+  opacity:0;
+  }
+  100% {
+  opacity:1;
+  }
+  }
+
+.first_title {
+  margin-top: 110px;
+  text-align: center;
+  font-size: 49.2px;
+  line-height: 77px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.first_subtitle {
+margin-top: 10px;
+text-align: center;
+font-size: 35.2px;
+font-weight: 400;
+color: #ffffff;
+}
+.first_btn {
+  width: 250px;
+  height: 73px;
+  margin: 50px auto;
+  border-radius: 10px;
+  background-color: #add136;
+  border: none;
+  vertical-align: middle;
+  font-size: 19.2px;
+  line-height: 77px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.first_btn:hover {
+  background-color: #809c23;
+}
+.first_btn:visited, .first_btn:focus, .first_btn:active,
+.trio_btn:visited, .trio_btn:focus, .trio_btn:active,
+.feat_btn:visited, .feat_btn:focus, .feat_btn:active,
+.find_btn:visited, .find_btn:focus, .find_btn:active,
+.bauer_btn:visited, .bauer_btn:focus, .bauer_btn:active,
+button {
+  outline:0 none !important;
+}
+/* =============== presentation ===================== */
+.icon_img {
+  display: block;
+  width: 58px;
+  margin: 80px auto;
+}
+.present_title {
+  margin-top: -60px;
+  font-size: 31.2px;
+  line-height: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #515151;
+  text-align: center;
+}
+.present_subtitle {
+  margin-top: 40px;
+  text-align: center;
+  opacity: 0.7;
+  font-size: 19.2px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #515151;
+}
+
+/* =============== trio ===================== */
+  .trio {
+  width: 100%;
+  margin-top: 50px;
+  margin: 100px auto;
+  
+}
+.trio_btn {
+  width: 43px;
+  height: 43px;
+  border-radius: 22px;
+  background-color: #5f5f5f;
+  border: none;
+  font-size: 20.2px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+}
+.trio_btn:hover {
+  background-color: #add136;
+}
+.trio_text {
+  width: 98px;
+  height: 33px;
+  font-size: 33.2px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #656565;
+}
+/* =============== glass ===================== */
+.glass {
+  margin: -50px auto;
+
+}
+
+.glass_title {
+  margin-top: 25px;
+  font-size: 25.2px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #add136;
+}
+.glass_subtitle {
+  margin-top: 25px;
+  opacity: 0.67;
+  font-size: 17.2px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #606060;
+}
+/* =============== find ===================== */
+.find {
+  margin-top: 100px;
+}
+.find_chair {
+  background-color: #e2f8ff;
+}
+.find_img {
+  right: 0;
+  margin-left: 80px;
+  margin-top: 80px;
+}
+.find_properties {
+  width: 648px;
+  height: 305px;
+  background-color: #e2f8ff;
+
+}
+.find_title, .bauer_title, .feat_title {
+  margin-top: 46px;
+  font-family: 'Montserrat' sans-serif;
+  font-size: 23.2px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #515151;
+  text-align: left;
+}
+.find_subtitle, .bauer_subtitle, .feat_subtitle {
+  margin-top: 40px;
+  font-family: 'Open Sans' sans-serif;
+  font-size: 17.2px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #515151;
+  text-align: left;
+}
+.find_btn, .bauer_btn, .feat_btn {
+  display: block;
+  margin-top: 30px;
+  margin-left: 0;
+  width: 187px;
+  height: 51px;
+  background-color: #26a6d1;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+}
+.bauer_btn {
+  background-color: #add136;
+}
+.find_btn:hover, .bauer_btn:hover, .feat_btn:hover {
+  cursor: pointer;
+  border: none;
+ }
+
+ .find_btn:hover {
+  background-color: #2a7c97;
+ }
+
+ .bauer_btn:hover {
+  background-color: #6b7c31;
+ }
+ .feat_btn:hover {
+  background-color: #adafaa;
+ }
+ .bauer_btn:active {
+  display: block;
+ }
+.collout_img {
+  display: block;
+}
+
+/* ------------------------ */
+.find_bag {
+  background-color: #f5f9eb
+}
+.find_bauer {
+  background-color: #f5f9eb
+}
+.bauer_btn {
+  background-color: #add136;
+}
+/* =============== featured ===================== */
+.feat_subtitle {
+  width: 670px;
+}
+.feat_btn {
+  display: block;
+  margin-top: 80px;
+  padding-left: 20px;
+  opacity: 0.41;
+  background-color: #ffffff;
+  border: 1px solid #515151;
+  margin-left: 20px;
+  opacity: 0.7;
+  font-size: 14.9px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #515151;
+}
+
+/* ================modal collout============= */
+ 
+/*CSS-свойства для заднего фона модального окна*/
+.iw-modal {
+	opacity: 0; /*изначально этот блок должен быть прозрачным*/ 
+  background: rgba(0,0,0,0.7); /*задаём цвет фона*/
+
+	pointer-events: none; /*делаем чтобы по элементу нельзя было кликнуть когда он прозрачный*/
+ 	position: fixed; 
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  transition: all 0.5s ease;
+  margin: 0;
+  padding: 0;
+  }
+
+.iw-modal:target {
+  opacity: 1; /*при клике окно становится видимым*/
+	pointer-events: auto; /*теперь по окну можно кликать мышкой*/
+  overflow-y: auto; /*прокрутка по вертикли страницы*/
+  border-radius: 10px; 
+}
+
+.iw-modal-wrapper {
+	margin:auto; /*выравниваем окно по центру по горизонтали*/
+  margin-top:25vh; /*отступ сверху можно задавать в px, % или vh*/
+  border-radius: 10px; 
+}
+
+/*CSS-свойства для блока, содержащего контент модального окна */ 
+.iw-CSS-modal-inner {
+  position: relative;
+  background: #fff; /*цвет фона*/
+  border: 1px solid #ccc; /*цвет и толщина рамки*/
+  border-radius: 20px; /*радиус скругления углов*/
+
+}
+
+/*CSS-свойства заголовка модального окна */
+.iw-modal-header {
+  padding: 15px;/*внутренний отступ*/
+  background:#f1f1f1;/*цвет фона*/
+  position:relative;
+  border-radius: 20px; 
+}
+.iw-modal-title {
+	font-size: 18px; /*размер шрифта*/
+	color:#555; /*цвет шрифта*/
+	font-weight:bold; /*жирность шрифта*/
+  line-height: 1.5; /*высота строки*/
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*CSS для кнопки закрытия окна*/
+.iw-close {
+position:absolute;
+top:0px; /*отступ сверху*/
+right:10px; /*отступ справа*/
+font-size: 32px; /*размер шрифта*/
+color: #99c50a;; /*цвет шрифта*/
+text-decoration: none;
+}
+
+.iw-close:hover, .iw-close:focus {
+color: #4c7c3d; /*цвет шрифта при наведении*/
+cursor: pointer;
+text-decoration: none;
+}
+
+/*CSS для блока с текстом модального окна*/
+
+.iw-modal-text {
+  padding: 15px 20px; /*внутренний отступ*/
+}
+
+/**MEDIA**/
+@media (min-width: 550px) {
+  .iw-modal-wrapper {
+    max-width: 500px;
+   }
+}
+/**end.Модальное окно**/
+
+/* =============== photos ===================== */
+.photos {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  margin: 30px auto;
+}
+#rectangle{
+  width: 301px;
+  height: 510px;
+  border: 1px solid rgba(0,0,0,0.13);
+  border-radius:10px;
+  background:#f9f9f9;
+}
+.photos_img1, .photos_img2, .photos_img3 {
+  opacity: 0.86;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+} 
+.photos_img1:hover, .photos_img2:hover, .photos_img3:hover {
+  opacity: 1;
+  -webkit-filter: contrast(185%);
+}
+.progress {
+  width: 250px;
+  height: 14px;
+  color: #add136;
+  margin: 20px auto;
+  border-radius: 7px;
+}
+.photos_title {
+  width: 214px;
+  margin: 20px auto;
+  font-size: 17.2px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #484848;
+  
+}
+.photos_subtitle {
+  width: 250px;
+  margin: 15px auto;
+  opacity: 0.7;
+  font-size: 13.2px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #484848;
+  text-align: left;
+}
+.photos_textl, .photos_textr { 
+font-size: 13.2px;
+line-height: 1.2;
+font-weight: 600;
+color: #8d8d8d;
+} 
+.photos_textr {
+  margin-left: 20px;
+}
+.photos_textl {
+  margin-top: -15px;
+  margin-left: 199px;
+
+}
+.divider {
+  display: block;
+  background-color: #c4c7c9;
+  width: 250px;
+  height: 1px;
+  margin: 20px auto;
+}
+.photos_textsee {
+  margin-left: 120px;
+  opacity: 0.7;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #484848;
+}
+.photo2_img {
+  margin-top: -40px;
+  margin-left: 255px;
+}
+/* =============== part ===================== */
+.part {
+  display: block;
+  margin-top: 0px;
+  min-height: 580px;
+  background: url("../img/bg1.jpg") center center/cover no-repeat;
+}
+.part_title {
+  display: block;
+  margin: 40px auto;
+  font-size: 39.2px;
+  line-height: 1.2;
+  font-weight: 480px;
+  color: #9ec02d;
+}
+.part_subtitle {
+  width: 1100px;
+  text-align: center;
+  margin-top: 0px;
+  font-size: 19.2px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #949494;
+}
+
+.callout1, .callout2 {
+  background: url("../img/rectangle.svg") center center/cover no-repeat;
+  margin-top: 110px;
+  margin-left: 75px;
+  width: 399px;
+  height: 170px;
+
+}
+
+.row_title1, .row_title2 {
+  padding-top: 30px;
+  font-family: 'Open Sans' sans-serif;
+  font-size: 21.2px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #9ec02d;
+  text-align: center;
+}
+.row_subtitle1, .row_subtitle2 {
+  width: 320px;
+  font-size: 13.2px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #848484;
+  text-align: center;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.david1, .david2 {
+  position: relative;
+  margin-left: 120px; 
+  margin-top: 10px;
+}
+
+.row_text1, .row_text2 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Recursive', sans-serif;
+  font-size: 15.2px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #494949;
+  margin-left: 190px;
+  margin-top: -35px;
+}
+.footer {
+  height: 80px;
+}
+.footer_icon {
+  margin: 30px;
+}
+.footer_divider {
+  display: block;
+  margin-top: -120px;
+  background-color: #c4c7c9;
+  width: 100%;
+  height: 1px;
+  margin: 20px auto;
+}
+.copyright_a {
+  height: 50px;
+}
+.copyright {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Recursive', sans-serif;
+  margin: 0px auto;
+  font-family: 'Open Sans' sans-serif; 
+  font-size: 15.2px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #494949;
+  text-align: center;
+}
+/* ====================================вверх ===================*/
+
+/* #scroll-bottom {
+  position: relative;
+  height: 1500px;
+} */
+
+#back-top{  
+  position:fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 0;
+  margin: 0;  
+}
+
+#back-top a{
+  width:64px;
+  display:block;
+  text-align:center;
+  background-color: transparent;
+  -webkit-transition:2s;
+  -moz-transition:2s;
+  transition:2s;
+}
+
+#back-top span{
+  width:41px;
+  height: 90px;
+  display:block;
+  margin: 0;
+  padding: 0;
+  background: url("/icons/rocket.png") no-repeat center center;
+  -webkit-transition:2s;
+  -moz-transition:2s;
+  transition:2s;
+}
+
+/* #back-top a:hover span{
+  background-color: rgba(0,0,0,0.0);
+} */
+
+@media (max-width:550px) {
+#back-top{  
+  position:fixed;
+  width: 100%;
+  height: 38px;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0,0,0,0.7);  
+}
+
+#back-top a{
+  width:100%;
+  display:block;
+  text-align:center;
+}
+
+#back-top span{
+  width: 100%;
+  height: 38px;
+  display:block;
+  margin: 0;
+  padding: 0;
+  background: url("/icons/rocket.png") no-repeat center center;
+}
+}
+
+/* =======================login/register==================== */
+input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #99c50a;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #99c50a;
+  height: 37px;
+  line-height: 0.5;
+  color: white;
+  padding: 14px 20px;
+  margin: 18px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 17px;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+} 
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+   padding: 10px 18px;
+  background-color: #99c50a;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 10%;
+
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
